@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>VoizFonica</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" type="text/css" href="dashboard/new_con.css">
+    <link rel="stylesheet" href="dashboard/vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <!-- Google fonts - Popppins for copy-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,800">
+    <!-- orion icons-->
+    <link rel="stylesheet" href="dashboard/css/orionicons.css">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="dashboard/css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="dashboard/css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="dashboard/img/favicon.png?3">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style type="text/css">
+        footer{padding:25px 0;text-align:center;  width: -webkit-fill-available;  }
+        footer span.copyright{font-size:90%;line-height:40px;text-transform:none;font-family:Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif }
+        footer ul.quicklinks{font-size:90%;line-height:40px;margin-bottom:0;text-transform:none; color: black;font-family:Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif
+        }
+        ul.social-buttons{ margin-bottom:0}
+        ul.social-buttons li a{ font-size:20px; line-height:40px; display:block; width:40px; height:40px; -webkit-transition:all .3s; -moz-transition:all .3s;transition:all .3s; color:#fff; border-radius:100%;outline:0; background-color:#212529 }
+        ul.social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li a:hover{  background-color:#fed136 }
+        #header{
+            background-color: #3056A0;
+            line-height: 70px;
+            color: white;
+            font-size: 3em;
+            text-align: center;
+        }
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;}
+
+        #contactdetail{
+            border:1px solid #999999;
+            margin: 15px;
+            padding: 15px;
+            text-align: center;
+            width: -webkit-fill-available;
+
+        }
+        .container-fluid{
+            width: -webkit-fill-available;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+        .reference{
+            padding-left:400px;
+        }
+
+    </style>
+
+</head>
+<body>
+<!-- navbar-->
+<header class="header">
+    <nav class="navbar navbar-expand-lg px-4 py-2 bg-white shadow"><a href="#" class="sidebar-toggler text-gray-500 mr-4 mr-lg-5 lead"><i class="fas fa-align-left"></i></a><a href="index.html" class="navbar-brand font-weight-bold text-uppercase text-base">INVOICE</a>
+        <ul class="ml-auto d-flex align-items-center list-unstyled mb-0">
+            <li class="nav-item">
+
+            </li>
+
+            <li class="nav-item dropdown ml-auto"><a id="userInfo" href="http://example.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"><i class="fa fa-user-circle" aria-hidden="true"></i></a>
+                <div aria-labelledby="userInfo" class="dropdown-menu"><a href="#" class="dropdown-item"><strong class="d-block text-uppercase headings-font-family">User name</strong></a>
+
+                    <div class="dropdown-divider"></div><a href="/" class="dropdown-item">Logout</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</header>
+<div class="d-flex align-items-stretch">
+    <div id="sidebar" class="sidebar py-3" style="background-color: black">
+        <div style="font-family: Kaushan Script;color: yellow;font-size: 25px;text-align: center;">VoizFonica</div>
+        <ul class="sidebar-menu list-unstyled">
+            <li class="sidebar-list-item"><a href="/dashboard" class="sidebar-link text-muted"><i class="o-home-1 mr-3 text-gray"></i><span>Home</span></a></li>
+            <li class="sidebar-list-item"><a href="/myaccount" class="sidebar-link text-muted"><i class="o-sales-up-1 mr-3 text-gray"></i><span>My Account</span></a></li>
+            <li class="sidebar-list-item"><a href="/invoice" class="sidebar-link text-muted"><i class="o-table-content-1 mr-3 text-gray"></i><span>Invoice bills</span></a></li>
+            <li class="sidebar-list-item"><a href="/newconnection" class="sidebar-link text-muted"><i class="o-survey-1 mr-3 text-gray"></i><span>New Connection</span></a></li>
+            <li class="sidebar-list-item"><a href="/help&support" class="sidebar-link text-muted"><i class="o-exit-1 mr-3 text-gray"></i><span>Help & support</span></a></li>
+            <li class="sidebar-list-item"><a href="/plan" class="sidebar-link text-muted"><i class="fa fa-shopping-bag mr-3 text-gray"></i><span>Recharge</span></a></li>
+            <li class="sidebar-list-item"><a href="/editprofile" class="sidebar-link text-muted"><i class="fa fa-user mr-3 text-gray"></i><span>Edit Profile</span></a></li>
+    </div>
+    <div class="page-holder w-100 d-flex flex-wrap">
+        <div id="header" >
+
+        </div>
+
+
+
+        <div id="contactdetail"  style="font-size: 15px;">
+
+
+            <table  id="table" class="table table-striped"  style="border-color:#0076ff;">
+                <thead>
+                <tr>
+                    <td><b>Contact_Number</b></td>
+                    <td th:text="${invoice.contact}">Name</td>
+                </tr>
+                <tr>
+                    <!--<td><b>CONTACT NO</b></td>
+                    <td th:text="${newconnection.contact}">Name</td>
+                </tr>-->
+                <tr>
+                    <td><b>START_DATE</b></td>
+                    <td th:text="${invoice.startDate}">Name</td>
+                </tr>
+                <tr>
+                    <td><b>END_DATE</b></td>
+                    <td th:text="${invoice.endDate}">Name</td>
+                </tr>
+                <!-- <tr>
+                     <td><b>RECHARGED ON</b></td>
+                     <td th:text="${invoice.}"
+                -->     <!--<tr>
+                    <td><b>ADDRESS LINE 1</b></td>
+                    <td th:text="${newconnection.address1}">Name</td>
+                </tr>
+                <tr>
+                    <td><b>ADDRESS LINE 2</b></td>
+                    <td th:text="${newconnection.address2}">Name</td>
+                </tr>-->
+                <!--<tr>
+                    <td><b>STATE</b></td>
+                    <td th:text="${newconnection.state}">Name</td>
+                </tr>
+                <tr>
+                    <td><b>CITY</b></td>
+                    <td th:text="${newconnection.city}">Name</td>
+                </tr>
+                <tr>
+                    <td><b>PIN</b></td>
+                    <td th:text="${newconnection.zip}">Name</td>
+                </tr>
+
+-->
+                </thead>
+                <tbody>
+
+
+            </table>
+
+            <h2>Invoice Bill is successfully generated</h2>
+            <!--<button class="btn btn-primary"><a href="newconnection" style="color: black">Go back to new connection</a></button>
+--> <div class="reference">
+            <!--
+                        <a href = "dashboard"><input type="button" value="Back to Dashboard" class="btn btn-success"> </a>&nbsp; &nbsp;
+            -->
+            <input id="pdf-button" type="button" class="btn btn-success" value="Download Invoice" onclick="HTMLtoPDF()">
+        </div>
+
+
+            <script>
+                // Disable form submissions if there are invalid fields
+                (function() {
+                    'use strict';
+                    window.addEventListener('load', function() {
+                        // Get the forms we want to add validation styles to
+                        var forms = document.getElementsByClassName('needs-validation');
+                        // Loop over them and prevent submission
+                        var validation = Array.prototype.filter.call(forms, function(form) {
+                            form.addEventListener('submit', function(event) {
+                                if (form.checkValidity() === false) {
+                                    event.preventDefault();
+                                    event.stopPropagation();
+                                }
+                                form.classList.add('was-validated');
+                            }, false);
+                        });
+                    }, false);
+                })();
+            </script>
+
+
+        </div>
+
+    </div>
+</div>
+<!-- JavaScript files-->
+<script src="dashboard/vendor/jquery/jquery.min.js"></script>
+<script src="dashboard/vendor/popper.js/umd/popper.min.js"> </script>
+<script src="dashboard/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="dashboard/vendor/jquery.cookie/jquery.cookie.js"> </script>
+<script src="dashboard/vendor/chart.js/Chart.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+<script src="dashboard/js/charts-custom.js"></script>
+<script src="dashboard/js/front.js"></script>
+<script  src="dashboard/js/jspdf.js"></script>
+<script  src="dashboard/js/jquery-2.1.3.js"></script>
+<script  src="dashboard/js/pdfFromHTML.js"></script>
+
+</body>
+</html>

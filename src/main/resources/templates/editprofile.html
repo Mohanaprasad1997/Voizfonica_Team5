@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>VoizFonica</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" type="text/css" href="dashboard/new_con.css">
+    <link rel="stylesheet" href="dashboard/vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <!-- Google fonts - Popppins for copy-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,800">
+    <!-- orion icons-->
+    <link rel="stylesheet" href="dashboard/css/orionicons.css">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="dashboard/css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="dashboard/css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="dashboard/img/favicon.png?3">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style type="text/css">
+        footer{padding:25px 0;text-align:center;  width: -webkit-fill-available;  }
+        footer span.copyright{font-size:90%;line-height:40px;text-transform:none;font-family:Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif }
+        footer ul.quicklinks{font-size:90%;line-height:40px;margin-bottom:0;text-transform:none; color: black;font-family:Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif
+        }
+        ul.social-buttons{ margin-bottom:0}
+        ul.social-buttons li a{ font-size:20px; line-height:40px; display:block; width:40px; height:40px; -webkit-transition:all .3s; -moz-transition:all .3s;transition:all .3s; color:#fff; border-radius:100%;outline:0; background-color:#212529 }
+        ul.social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li a:hover{  background-color:#fed136 }
+        #header{
+            background-color: #3056A0;
+            line-height: 70px;
+            color: white;
+            font-size: 3em;
+            text-align: center;
+        }
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;}
+
+        #contactdetail{
+            border:1px solid #999999;
+            margin: 15px;
+            padding: 15px;
+            text-align: center;
+            width: -webkit-fill-available;
+
+        }
+        .container-fluid{
+            width: -webkit-fill-available;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+    </style>
+
+</head>
+<body>
+<!-- navbar-->
+<header class="header">
+    <nav class="navbar navbar-expand-lg px-4 py-2 bg-white shadow"><a href="#" class="sidebar-toggler text-gray-500 mr-4 mr-lg-5 lead"><i class="fas fa-align-left"></i></a><a href="index.html" class="navbar-brand font-weight-bold text-uppercase text-base">EDIT PROFILE</a>
+        <ul class="ml-auto d-flex align-items-center list-unstyled mb-0">
+            <li class="nav-item">
+
+            </li>
+
+            <li class="nav-item dropdown ml-auto"><a id="userInfo" href="http://example.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"><i class="fa fa-user-circle" aria-hidden="true"></i></a>
+                <div aria-labelledby="userInfo" class="dropdown-menu"><a href="#" class="dropdown-item"><strong class="d-block text-uppercase headings-font-family">User name</strong></a>
+
+                    <div class="dropdown-divider"></div><a href="/" class="dropdown-item">Logout</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</header>
+<div class="d-flex align-items-stretch">
+    <div id="sidebar" class="sidebar py-3" style="background-color: black">
+        <div style="font-family: Kaushan Script;color: yellow;font-size: 25px;text-align: center;">VoizFonica</div>
+        <ul class="sidebar-menu list-unstyled">
+            <li class="sidebar-list-item"><a href="/dashboard" class="sidebar-link text-muted"><i class="o-home-1 mr-3 text-gray"></i><span>Home</span></a></li>
+            <li class="sidebar-list-item"><a href="/myaccount" class="sidebar-link text-muted"><i class="o-sales-up-1 mr-3 text-gray"></i><span>My Account</span></a></li>
+            <li class="sidebar-list-item"><a href="/invoice" class="sidebar-link text-muted"><i class="o-table-content-1 mr-3 text-gray"></i><span>Invoice bills</span></a></li>
+            <li class="sidebar-list-item"><a href="/newconnection" class="sidebar-link text-muted"><i class="o-survey-1 mr-3 text-gray"></i><span>New Connection</span></a></li>
+            <li class="sidebar-list-item"><a href="/help&support" class="sidebar-link text-muted"><i class="o-exit-1 mr-3 text-gray"></i><span>Help & support</span></a></li>
+            <li class="sidebar-list-item"><a href="/plan" class="sidebar-link text-muted"><i class="fa fa-shopping-bag mr-3 text-gray"></i><span>Recharge</span></a></li>
+            <li class="sidebar-list-item"><a href="/editprofile" class="sidebar-link text-muted active"><i class="fa fa-user mr-3 text-gray"></i><span>Edit Profile</span></a></li>
+    </div>
+    <div class="page-holder w-100 d-flex flex-wrap">
+        <div id="header" >
+
+        </div>
+
+
+
+        <div id="contactdetail"  style="font-size: 15px;">
+
+            <form class="needs-validation d-inline-block" method="POST" th:action="${signup}" th:object="${signUp}"  novalidate>
+
+
+                <div class="form-row" >
+                    <div class="form-group col-md-6">
+                        <label>Name</label>
+                        <input th:text="${username}" th:name="username" th:id="username" type="text" class="form-control" placeholder="Enter full name" required>
+
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label>Contact No</label>
+                        <!-- &lt;!&ndash;<h2 style="align-items: center">    Welcome </h2>&ndash;&gt;<h2 th:text="${login}" style="align-items: center"></h2>-->
+                        <h3 th:text="${loginContact}">welcome</h3>
+
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Email ID</label>
+                    <input th:value="${email}" th:name="email" th:id="email" type="email" class="form-control" placeholder="abc@xyz.com" required>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input  th:value="${password}" th:name="password" th:id="password" class="form-control" placeholder="password" type="password" required>
+                </div>
+                <div class="form-group">
+                    <label>Address</label>
+                    <input th:value="${address1}" th:name="address1" th:id="address1" type="text" class="form-control" placeholder="1234 Main St" required>
+                </div>
+                <div class="form-group">
+                    <label>Address 2</label>
+                    <input th:value="${address2}" th:name="address2" th:id="address2" type="text" class="form-control" placeholder="Apartment, studio, or floor" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label>City</label>
+                        <input th:value="${city}" th:name="city" th:id="city" type="text" class="form-control" required>
+
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label>State</label>
+                        <input th:value="${state}" th:name="state" th:id="state" type="text" class="form-control" required>
+
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label>Pin</label>
+                        <input th:value="${zip}" th:name="zip" th:id="zip" type="text" class="form-control"pattern="[0-9()]{3,6}" required>
+
+                    </div>
+                </div>
+
+                <br>
+                <button type="submit" class="btn btn-primary">Update</button>
+            </form>
+
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <span class="copyright" style="font-family:Roboto Slab;font-size: 20px">Copyright &copy; VoizFonica</span>
+                    </div>
+
+                    <div class="col-md-4">
+                        <ul class="list-inline social-buttons ">
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            // Disable form submissions if there are invalid fields
+            (function() {
+                'use strict';
+                window.addEventListener('load', function() {
+                    // Get the forms we want to add validation styles to
+                    var forms = document.getElementsByClassName('needs-validation');
+                    // Loop over them and prevent submission
+                    var validation = Array.prototype.filter.call(forms, function(form) {
+                        form.addEventListener('submit', function(event) {
+                            if (form.checkValidity() === false) {
+                                event.preventDefault();
+                                event.stopPropagation();
+                            }
+                            form.classList.add('was-validated');
+                        }, false);
+                    });
+                }, false);
+            })();
+        </script>
+
+
+    </div>
+
+</div>
+</div>
+<!-- JavaScript files-->
+<script src="dashboard/vendor/jquery/jquery.min.js"></script>
+<script src="dashboard/vendor/popper.js/umd/popper.min.js"> </script>
+<script src="dashboard/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="dashboard/vendor/jquery.cookie/jquery.cookie.js"> </script>
+<script src="dashboard/vendor/chart.js/Chart.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+<script src="dashboard/js/charts-custom.js"></script>
+<script src="dashboard/js/front.js"></script>
+</body>
+</html>

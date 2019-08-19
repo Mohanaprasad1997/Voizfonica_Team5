@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="signup/images/icons/favicon.ico"/>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="signup/vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="signup/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="signup/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="signup/fonts/iconic/css/material-design-iconic-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="signup/vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="signup/vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="signup/vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="signup/vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="signup/vendor/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="signup/css/util.css">
+    <link rel="stylesheet" type="text/css" href="signup/css/main.css">
+    <!--===============================================================================================-->
+</head>
+<body style="background-color: #999999;">
+
+<div class="limiter">
+    <div class="container-login100">
+        <div class="login100-more" style="background-image: url('signup/images/bg-01.jpg');"></div>
+
+        <div class="wrap-login100 p-l-50 p-r-50 p-t-72 p-b-50">
+            <form class="login100-form validate-form" method="POST" th:object="${signup}">
+					<span class="login100-form-title p-b-59">
+						Sign Up
+					</span>
+
+                <div class="wrap-input100 validate-input" data-validate="Number is required">
+                    <span class="label-input100">Mobile Number</span>
+
+                    <input  th:field="*{contact}" type="text" pattern="[0-9() ]{5-15}" class="input100" id="mobilenumber" placeholder="Enter mobile no">
+                    <span class="validationError focus-input100"
+                          th:if="${#fields.hasErrors('contact')}"
+                          th:errors="*{contact}"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                    <span class="label-input100">Email</span>
+                    <input  type="email" class="form-control input100" placeholder="Enter email" th:field="*{email}">
+                    <span class="validationError focus-input100"
+                          th:if="${#fields.hasErrors('email')}"
+                          th:errors="*{email}"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Username is required">
+                    <span class="label-input100">Username</span>
+
+                    <input type="text" class="form-control input100"placeholder="Enter full name" th:field="*{username}">
+                    <span class="validationError focus-input100"
+                          th:if="${#fields.hasErrors('username')}"
+                          th:errors="*{username}"></span>
+
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate = "Password is required">
+                    <span class="label-input100">Password</span>
+
+                    <input type="password" class="form-control input100" placeholder="*************" th:field="*{password}">
+                    <span class="validationError focus-input100"
+                          th:if="${#fields.hasErrors('password')}"
+                          th:errors="*{password}"></span>
+                </div>
+
+
+                <div class="flex-m w-full p-b-33">
+                    <div class="contact100-form-checkbox">
+
+
+                    </div>
+
+
+                </div>
+
+                <div class="container-login100-form-btn">
+                    <div class="wrap-login100-form-btn">
+                        <div class="login100-form-bgbtn"></div>
+
+                        <div class="form-submit">
+                            <button type="submit" class="btn btn-primary login100-form-btn">Submit</button></div>
+
+
+                    </div>
+
+
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!--===============================================================================================-->
+<script src="signup/vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+<script src="signup/vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+<script src="signup/vendor/bootstrap/js/popper.js"></script>
+<script src="signup/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+<script src="signup/vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+<script src="signup/vendor/daterangepicker/moment.min.js"></script>
+<script src="signup/vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+<script src="signup/vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+<script src="signup/js/main.js"></script>
+
+</body>
+</html>

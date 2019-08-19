@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>VoizFonica</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/main.css" rel="stylesheet">
+
+
+    <style type="text/css">
+        #contactdetail{
+            border:1px solid #999999;
+            margin: 15px;
+            padding: 15px;
+            text-align: center;
+        }
+        .container-fluid{
+            width: -webkit-fill-available;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+        * {box-sizing: border-box}
+
+        /* Set height of body and the document to 100% */
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Roboto Slab';
+
+        }
+
+        /* Style tab links */
+        .tablink {
+            background-color: #4680ff;
+            color: white;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            font-size: 17px;
+            width: 33.33%;
+        }
+
+
+        .tablink:hover {
+            background-color: #4680ff;
+        }
+
+        /* Style the tab content (and add height:100% for full page content) */
+        .tabcontent {
+            color: white;
+            display:inline-block;
+            padding: 100px 20px;
+            height: 100%;
+        }
+
+    </style>
+</head>
+
+<body id="page-top">
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">VoizFonica</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav text-uppercase ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#ournetwork">OUR NETWORKS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#portfolio">PLANS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#recharge">RECHARGE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" th:href="login">
+                        <i class="fa fa-user-circle" aria-hidden="true"></i>
+                        LOGIN/SIGN UP
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Header -->
+<header class="masthead">
+    <div class="container">
+        <div class="intro-text">
+            <div class="intro-lead-in" >Welcome To </div>
+            <div class="intro-heading">VoizFonica</div>
+            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#ournetwork">Tell Me More</a>
+        </div>
+    </div>
+</header>
+
+<!-- ournetwork -->
+<section id="ournetwork" class="bg-light" style="
+    padding-top: 170px;
+    padding-bottom: 170px;
+">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading text-uppercase">OUR NETWORK</h2>
+            </div>
+        </div>
+        <div class="row text-center">
+            VoizFonica is a Mobile Network Operator and telephone company. VoizFonica provides network access and telecommunication services that help people and companies communicate in an easy, efficient and environmentally friendly way.VoizFonica business is very technology dependent as company acts as a network service provider (NSP)  in mobile.VoizFonica  is a company that is aware of the new challenges posed by today’s society. This is why the company offers the means to facilitate communication between people, providing them with the most secure and state of the art technology in order for them to live better, and for them to achieve whatever they resolve.
+
+        </div>
+    </div>
+    </div>
+</section>
+
+<!-- plan -->
+<section class="bg-light" id="portfolio" style="
+    padding-top: 170px;
+    padding-bottom: 170px;
+">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading text-uppercase">PLAN</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
+                </a>
+
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
+                </a>
+
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
+                </a>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<!--recharge-->
+<section id="recharge" class="bg-light" style="
+    padding-top: 100px;
+    padding-bottom: 180px;
+">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading text-uppercase">RECHARGE</h2>
+            </div>
+        </div>
+        <div class="page-holder w-100 d-flex flex-wrap">
+            <div class="container-fluid px-xl-5">
+                <div id="contactdetail" style="font-size: 20px;margin-top: 10px;margin-bottom: 0px;height: 375px">
+                    <button class="tablink" onclick="openPage('Prepaid', this)" id="defaultOpen" style="font-family: Roboto Slab">Prepaid</button>
+                    <button class="tablink" onclick="openPage('Postpaid', this)" style="font-family: Roboto Slab">Postpaid</button>
+                    <button class="tablink" onclick="openPage('Dongle ', this)" style="font-family: Roboto Slab">Dongle</button>
+
+
+                    <div id="Prepaid" class="tabcontent">
+                        <h3 style="font-family: Roboto Slab;color: black">PREPAID</h3>
+                        <div id="demo1" display:none>
+
+                            <div style="
+    padding-top: 10px;
+    padding-bottom: 10px;
+" >
+                                <label for="phone" style="color: black">Phone Number:&nbsp;&nbsp;&nbsp;</label>
+                                <input type="number"  pattern="[0-9()]{5-15}" name="phone"  required="required" data-validation-required-message="Please enter your phone number" placeholder=""/>
+                            </div>
+
+                            <div style="
+    padding-top: 10px;
+    padding-bottom: 10px;
+" ><label for="plans" style="color: black">Plans:&nbsp;</label>
+                                <select id="plans" name="plans" required>
+                                    <option value="-1">Plans</option>
+                                    <option value="1">Plan1</option>
+                                    <option value="2">Plan2</option>
+                                    <option value="3">Plan3</option>
+                                </select>
+                            </div>
+                            <div>
+                                <br>
+                                <button type="button" class="btn btn-primary" href="#">
+                                    Pay
+                                </button>
+                                <br><br>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="Postpaid" class="tabcontent">
+                        <h3 style="font-family: Roboto Slab;color: black">POSTPAID</h3>
+                        <div id="demo1" display:none>
+
+                            <div style="
+    padding-top: 10px;
+    padding-bottom: 10px;
+" >
+                                <label for="phone" style="color: black">Phone Number:&nbsp;&nbsp;&nbsp;</label>
+                                <input type="number"  pattern="[0-9()]{5-15}" name="phone"  required="required" data-validation-required-message="Please enter your phone number" placeholder=""/>
+                            </div>
+
+                            <div style="
+    padding-top: 10px;
+    padding-bottom: 10px;
+" ><label for="plans" style="color: black">Plans:&nbsp;</label>
+                                <select id="plans" name="plans" required>
+                                    <option value="-1">Plans</option>
+                                    <option value="1">Plan1</option>
+                                    <option value="2">Plan2</option>
+                                    <option value="3">Plan3</option>
+                                </select>
+                            </div>
+                            <div>
+                                <br>
+                                <button type="button" class="btn btn-primary" href="#">
+                                    Pay
+                                </button>
+                                <br><br>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="Dongle " class="tabcontent">
+                        <h3 style="font-family: Roboto Slab;color: black">DONGLE</h3>
+                        <div id="demo1" display:none>
+
+                            <div style="
+    padding-top: 10px;
+    padding-bottom: 10px;
+" >
+                                <label for="phone" style="color: black">Phone Number:&nbsp;&nbsp;&nbsp;</label>
+                                <input type="number"  pattern="[0-9()]{5-15}" name="phone"  required="required" data-validation-required-message="Please enter your phone number" placeholder=""/>
+                            </div>
+
+                            <div style="
+    padding-top: 10px;
+    padding-bottom: 10px;
+" ><label for="plans" style="color: black">Plans:&nbsp;</label>
+                                <select id="plans" name="plans" required>
+                                    <option value="-1">Plans</option>
+                                    <option value="1">Plan1</option>
+                                    <option value="2">Plan2</option>
+                                    <option value="3">Plan3</option>
+                                </select>
+                            </div>
+                            <div>
+                                <br>
+                                <button type="button" class="btn btn-primary" href="#">
+                                    Pay
+                                </button>
+                                <br><br>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div></div></div>
+</section>
+
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <span class="copyright">Copyright &copy; Your Website 2018</span>
+            </div>
+            <div class="col-md-4">
+                <ul class="list-inline social-buttons">
+                    <li class="list-inline-item">
+                        <a href="#">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Portfolio Modals -->
+
+<!-- Modal 1 -->
+<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2 class="text-uppercase">Prepaid Plans</h2>
+
+
+                            <ul class="timeline">
+
+                                <li>
+                                    <div class="timeline-image">
+                                        <img class="rounded-circle img-fluid" src="img/about/1.png" alt="">
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4>Plan 1</h4>
+                                            <h4 class="subheading">150 MB Combo 3G / 4G Data Pack</h4>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p class="text-muted">3G/4G Data: 150 MB. Local, STD & Roaming Calls: Unlimited. SMS: 100 SMS / Day<b>@ Rs.26</b></p>
+                                        </div>
+                                    </div>
+                                </li>
+
+
+                                <li class="timeline-inverted">
+                                    <div class="timeline-image">
+                                        <img class="rounded-circle img-fluid" src="img/about/2.png" alt="">
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4>Plan 2</h4>
+                                            <h4 class="subheading">200 MB Combo 3G Data Pack</h4>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p class="text-muted">3G Data: 200 MB, extra @Rs.0.04/10KB. Local, STD & Roaming Calls: Unlimited. SMS: 100 SMS / Day <b>@ Rs.19</b> </p>
+                                        </div>
+                                    </div>
+                                </li>
+
+
+                                <li>
+                                    <div class="timeline-image">
+                                        <img class="rounded-circle img-fluid" src="img/about/3.png" alt="">
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4>Plan 3</h4>
+                                            <h4 class="subheading">Topup - Rs. 7.47 Talktime</h4>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p class="text-muted">Talktime: Rs.7.47 <b>@ Rs.10</b>.</p>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+
+
+                            <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                <i class="fa fa-times"></i>
+                                Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2 class="text-uppercase">Postpaid Benefits</h2>
+
+
+                            <ul class="timeline">
+
+                                <li>
+                                    <div class="timeline-image">
+                                        <img class="rounded-circle img-fluid" src="img/about/1.png" alt="">
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4>Plan 1</h4>
+                                            <h4 class="subheading">3G/4G Data with Rollover</h4>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p class="text-muted">3G/4G Data: 150 GB. Local, STD & Roaming Calls: Unlimited. SMS: 100 SMS / Day</p>
+                                        </div>
+                                    </div>
+                                </li>
+
+
+                                <li class="timeline-inverted">
+                                    <div class="timeline-image">
+                                        <img class="rounded-circle img-fluid" src="img/about/2.png" alt="">
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4>Plan 2</h4>
+                                            <h4 class="subheading">Monthly Rental of RS.749 2 Free family add-ons 1 Regular + 1 data Add-on</h4>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p class="text-muted">3G Data: 200 MB, extra @Rs.0.04/10KB. Local, STD & Roaming Calls: Unlimited. SMS: 100 SMS / Day</p>
+                                        </div>
+                                    </div>
+                                </li>
+
+
+                                <li>
+                                    <div class="timeline-image">
+                                        <img class="rounded-circle img-fluid" src="img/about/3.png" alt="">
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4>Plan 3</h4>
+                                            <h4 class="subheading">Monthly Rental of Rs.1599 1 Free family add-on 1 Regular Sim</h4>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p class="text-muted">3G Data: 200 MB, extra @Rs.0.04/10KB. Local, STD & Roaming Calls: Unlimited. SMS: 100 SMS / Day</p>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+
+                            <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                <i class="fa fa-times"></i>
+                                Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 3 -->
+<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2 class="text-uppercase">Dongle Plans</h2>
+
+
+                            <ul class="timeline">
+
+                                <li>
+                                    <div class="timeline-image">
+                                        <img class="rounded-circle img-fluid" src="img/about/1.png" alt="">
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4>Plan 1</h4>
+                                            <h4 class="subheading">3G Data Pack for 28 days</h4>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p class="text-muted">3G/4G Data: 150 MBPS. Local, STD & Roaming Calls: Unlimited.<b>@₹48.0</b></p>
+                                        </div>
+                                    </div>
+                                </li>
+
+
+                                <li class="timeline-inverted">
+                                    <div class="timeline-image">
+                                        <img class="rounded-circle img-fluid" src="img/about/2.png" alt="">
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4>Plan 2</h4>
+                                            <h4 class="subheading">3G/4G Data Pack 80days ₹ 300.0</h4>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p class="text-muted">3G Data: 200 MB @ 100MBPS. Local, STD & Roaming Calls: Unlimited.<b>@ ₹ 300.0</b> </p>
+                                        </div>
+                                    </div>
+                                </li>
+
+
+                                <li>
+                                    <div class="timeline-image">
+                                        <img class="rounded-circle img-fluid" src="img/about/3.png" alt="">
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4>Plan 3</h4>
+                                            <h4 class="subheading">3G/4G Data Pack 480days ₹ 150.0</h4>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p class="text-muted">3G Data: 200 MB @ 100MBPS. Local, STD & Roaming Calls: Unlimited.<b>@ ₹ 150.0</b></p>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                            <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                <i class="fa fa-times"></i>
+                                Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Contact form JavaScript -->
+<script src="js/jqBootstrapValidation.js"></script>
+<script src="js/contact_me.js"></script>
+<script>
+    function openPage(pageName,elmnt) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "#bbbbbb";
+        }
+        document.getElementById(pageName).style.display = "block";
+        elmnt.style.backgroundColor = "";
+    }
+
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+
+
+</script>
+
+<!-- Custom scripts for this template -->
+<script src="js/agency.min.js"></script>
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/popper.js/umd/popper.min.js"> </script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
+<script src="vendor/chart.js/Chart.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+<script src="js/front.js"></script>
+
+</body>
+
+</html>

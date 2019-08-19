@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>VoizFonica</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS--> 
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!-- Google fonts - Popppins for copy-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,800">
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <!-- orion icons-->
+    <link rel="stylesheet" href="css/orionicons.css">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/favicon.png?3">
+    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+        <Style type='text/css' >
+footer{padding:25px 0;text-align:center;  width: -webkit-fill-available;  }
+ footer span.copyright{font-size:90%;line-height:40px;text-transform:none;font-family:Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif }
+ footer ul.quicklinks{font-size:90%;line-height:40px;margin-bottom:0;text-transform:none; color: black;font-family:Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif
+ }
+ ul.social-buttons{ margin-bottom:0}
+ ul.social-buttons li a{ font-size:20px; line-height:40px; display:block; width:40px; height:40px; -webkit-transition:all .3s; -moz-transition:all .3s;transition:all .3s; color:#fff; border-radius:100%;outline:0; background-color:#212529 }
+ ul.social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li a:hover{  background-color:#fed136 }
+ #header{
+  background-color: #3056A0;
+  line-height: 70px;
+  color: white;
+  font-size: 3em;
+  text-align: center;
+}
+ .footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;}
+
+#contactdetail{
+  border:1px solid #999999;
+  margin: 15px;
+  padding: 15px;
+  text-align: center;
+      width: -webkit-fill-available;
+
+}
+.container-fluid{
+  width: -webkit-fill-available;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+  
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #4680ff;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 33.33%;
+}
+
+.tablink:hover {
+  background-color: #4680ff;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: black;
+  display:inline-block;
+  padding: 100px 20px;
+  height: 100%;
+}
+</style>
+  </head>
+  <body>
+    <!-- navbar-->
+    <header class="header" >
+      <nav class="navbar navbar-expand-lg px-4 py-2 bg-white shadow"><a href="#" class="sidebar-toggler text-gray-500 mr-4 mr-lg-5 lead"><i class="fas fa-align-left"></i></a><a href="index.html" class="navbar-brand font-weight-bold text-uppercase text-base">My Account</a>
+        <ul class="ml-auto d-flex align-items-center list-unstyled mb-0">
+          <li class="nav-item">
+            
+          </li>
+         
+          <li class="nav-item dropdown ml-auto"><a id="userInfo" href="http://example.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"><i class="fa fa-user-circle" aria-hidden="true"></i></a>
+            <div aria-labelledby="userInfo" class="dropdown-menu"><a href="#" class="dropdown-item"><strong class="d-block text-uppercase headings-font-family">User name</strong></a>
+              
+              <div class="dropdown-divider"></div><a href="../index.html" class="dropdown-item">Logout</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="d-flex align-items-stretch">
+      <div id="sidebar" class="sidebar py-3" style="background-color: black">
+        <div style="font-family: Kaushan Script;color: yellow;font-size: 25px;text-align: center;">Voiz Fonica</div>
+        <ul class="sidebar-menu list-unstyled">
+              <li class="sidebar-list-item"><a href="dashboard.html" class="sidebar-link text-muted"><i class="o-home-1 mr-3 text-gray"></i><span>Home</span></a></li>
+              <li class="sidebar-list-item"><a href="myaccount.html" class="sidebar-link text-muted active"><i class="o-sales-up-1 mr-3 text-gray"></i><span>My Account</span></a></li>
+              <li class="sidebar-list-item"><a href="invoicebills.html" class="sidebar-link text-muted"><i class="o-table-content-1 mr-3 text-gray"></i><span>Invoice Bills</span></a></li>
+              <li class="sidebar-list-item"><a href="newconnection.html" class="sidebar-link text-muted"><i class="o-survey-1 mr-3 text-gray"></i><span>New Connection</span></a></li>
+         
+              <li class="sidebar-list-item"><a href="help&support.html" class="sidebar-link text-muted"><i class="o-exit-1 mr-3 text-gray"></i><span>Help & Support</span></a></li>
+        <li class="sidebar-list-item"><a href="../index.html" class="sidebar-link text-muted"><i class="o-exit-1 mr-3 text-gray"></i><span>Logout</span></a></li></ul>
+        <div class="text-gray-400 text-uppercase px-3 px-lg-4 py-4 font-weight-bold small headings-font-family"></div>
+        
+      </div>
+	  
+      <div class="page-holder w-100 d-flex flex-wrap" >
+   
+   <div class="page-holder w-100 d-flex flex-wrap">
+  <div id="contactdetail" style="font-size: 20px;margin-top: 10px;margin-bottom: 0px;">
+  <button class="tablink" onclick="openPage('Prepaid', this)" id="defaultOpen" style="font-family: Roboto Slab">Prepaid</button>
+<button class="tablink" onclick="openPage('Postpaid', this)" style="font-family: Roboto Slab">Postpaid</button>
+<button class="tablink" onclick="openPage('Dongle ', this)" style="font-family: Roboto Slab">Dongle</button>
+
+<div id="Prepaid" class="tabcontent">
+ <h3 style="font-family: Roboto Slab;color: black">PREPAID</h3>
+<div class="panel-group" >
+    
+    <div class="panel panel-primary border border-primary" style="padding: 15px 0 15px 0">
+      <div class="panel-heading" ><label>My Number</label></div>
+      <div class="panel-body" ><label>Number :</label> ----------</div>
+      <div class="panel-body" ><label>Type  :</label> ----------</div>
+      <div class="panel-body" ><label>Balance :</label> ----------</div>
+      
+    </div>
+
+    <br>
+
+      <div class="panel panel-primary border border-primary" style="padding: 15px 0 15px 0">
+      <div class="panel-heading" ><label>Other Number</label></div>
+      <div class="panel-body" ><label>Number : ----------</label></div>
+      <div class="panel-body" ><label>Type   : ----------</label></div>
+      <div class="panel-body" ><label>Balance : ----------</label></div>
+      
+    </div>
+ 
+      </div>
+</div>
+
+<div id="Postpaid" class="tabcontent">
+ <h3 style="font-family: Roboto Slab;color: black">POSTPAID</h3>
+<div class="panel-group" >
+    
+    <div class="panel panel-primary border border-primary" style="padding: 15px 0 15px 0">
+      <div class="panel-heading" ><label>My Number</label></div>
+      <div class="panel-body" ><label>Number :</label> ----------</div>
+      <div class="panel-body" ><label>Type  :</label> ----------</div>
+      <div class="panel-body" ><label>Balance :</label> ----------</div>
+      
+    </div>
+
+    <br>
+
+      <div class="panel panel-primary border border-primary" style="padding: 15px 0 15px 0">
+      <div class="panel-heading" ><label>Other Number</label></div>
+      <div class="panel-body" ><label>Number : ----------</label></div>
+      <div class="panel-body" ><label>Type   : ----------</label></div>
+      <div class="panel-body" ><label>Balance : ----------</label></div>
+      
+    </div>
+ 
+      </div>
+</div>
+
+<div id="Dongle " class="tabcontent">
+ <h3 style="font-family: Roboto Slab;color: black">DONGLE</h3>
+  <div class="panel-group" >
+    
+    <div class="panel panel-primary border border-primary" style="padding: 15px 0 15px 0">
+      <div class="panel-heading" ><label>My Number</label></div>
+      <div class="panel-body" ><label>Number :</label> ----------</div>
+      <div class="panel-body" ><label>Type  :</label> ----------</div>
+      <div class="panel-body" ><label>Balance :</label> ----------</div>
+      
+    </div>
+
+    <br>
+
+      <div class="panel panel-primary border border-primary" style="padding: 15px 0 15px 0">
+      <div class="panel-heading" ><label>Other Number</label></div>
+      <div class="panel-body" ><label>Number : ----------</label></div>
+      <div class="panel-body" ><label>Type   : ----------</label></div>
+      <div class="panel-body" ><label>Balance : ----------</label></div>
+      
+    </div>
+ 
+      </div>
+</div>
+   
+    </div>
+      
+       <footer >
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <span class="copyright" style="font-family:Roboto Slab;font-size: 20px;">Copyright &copy; Voiz Fonica</span>
+          </div>
+      
+          <div class="col-md-4">
+            <ul class="list-inline social-buttons ">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+          
+          </div>
+        </div>
+      </div>
+    </footer>
+  
+</div>
+
+<script>
+function openPage(pageName,elmnt) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "#bbbbbb";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = "";
+}
+
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+
+</script>
+    
+    <!-- JavaScript files-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper.js/umd/popper.min.js"> </script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
+    <script src="vendor/chart.js/Chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script src="js/front.js"></script>
+  </body>
+</html>
